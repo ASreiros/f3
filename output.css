@@ -1,53 +1,48 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  box-sizing: unset;
 }
-body section {
-  width: calc(100% - 8px);
-  border-width: 2px 4px 0 4px;
-  border-color: black;
-  border-style: solid;
-  margin: 0;
-  padding: 0;
+
+section {
+  width: 100%;
+  font-size: 0;
+  height: 100vh;
   position: relative;
 }
-body section div {
+section div {
   display: inline-block;
-  width: calc(50% - 5px);
-  height: calc(100vh - 6px);
+  width: 50%;
+  height: 100vh;
+  background-color: pink;
 }
-body section div:first-of-type {
+section div:first-child {
   background-image: url(./img/mainImg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-body section div:last-of-type {
+section div:last-child {
   position: absolute;
-  top: 0;
-  right: 0;
 }
-body section div img {
-  display: block;
-  width: 62px;
-  margin: 60px 0 0 25px;
+section div img {
+  margin: 20px 0 60px 20px;
+  display: inline;
+  width: 60px;
 }
-body section div h1 {
-  display: block;
-  margin: 30px 0 0 25px;
-  text-transform: capitalize;
-  font-weight: bold;
-  font-size: 60px;
+section div h1 {
+  margin: 0 0 60px 20px;
+  font-size: 38px;
   width: 50%;
+  text-transform: capitalize;
 }
-body section div p {
+section div p {
+  margin: 0 0 0 20px;
+  font-size: 16px;
   color: rgba(0, 0, 0, 0.3);
-  margin-left: 20px;
 }
-body section div form {
-  margin: 30px 0 0 20px;
+section div form {
+  margin: 0 0 30px 20px;
 }
-body section div form input {
+section div form input {
   display: block;
   width: 60%;
   margin-bottom: 20px;
@@ -55,10 +50,7 @@ body section div form input {
   font-weight: bolder;
   padding-left: 10px;
 }
-body section div form input::placeholder {
-  text-transform: capitalize;
-}
-body section div form button {
+section div form button {
   background-color: #83B542;
   color: white;
   text-align: center;

@@ -1,62 +1,53 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing:unset;
-    
+* {
+    margin:0;
+    padding:0;
+    }
+
+
 section{
-    width: calc(100% - 8px);
-    border-width: 2px 4px 0 4px;
-    border-color: black;
-    border-style: solid;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    
+    width: 100%;
+    font-size: 0;
+    height: 100vh;
+    position:relative;
 
     div{
         display: inline-block;
-        width: calc(50%  - 5px);
-        height: calc(100vh - 6px);
-        
-        
+        width: 50%;
+        height: 100vh;
+        background-color: pink;
+
+        &:first-child{
+            background-image: url(./img/mainImg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
 
-            &:first-of-type{
-              background-image: url(./img/mainImg.jpg);
-              background-repeat:no-repeat ;
-              background-size: cover;
-            } 
-            
-            &:last-of-type{
-                position: absolute;
-                top: 0;
-                right: 0;
-            }
+        &:last-child{
+            position: absolute;
+        }
 
+        img{
+            margin: 20px 0 60px 20px;
+            display: inline;
+            width: 60px;
+        }
 
-         img{
-             display: block;
-             width: 62px;
-             margin: 60px 0 0 25px;
-         }
+        h1{
+            margin: 0 0 60px 20px;
+            font-size: 38px;
+            width: 50%;
+            text-transform: capitalize;
+        }
 
-          h1{
-             display: block;
-             margin: 30px 0 0 25px;
-             text-transform: capitalize;
-             font-weight: bold;
-             font-size: 60px;
-             width: 50%;
-          }
+        p{
+            margin: 0 0 0 20px;
+            font-size: 16px;
+            color: rgb(0, 0, 0, 0.3);
+        }
 
-          p{
-              color: rgb(0, 0, 0, 0.3);
-              margin-left: 20px;
-          }
-
-
-          form{
-            margin: 30px 0 0 20px;
+        form{
+            margin: 0 0 30px 20px;
 
             input{
                 display: block;
@@ -68,11 +59,6 @@ section{
 
 
             }
-
-            input::placeholder{
-                 text-transform: capitalize;   
-            }
-            
 
             button{
                 background-color: #83B542;
@@ -86,9 +72,8 @@ section{
                 border: none;
                 border-radius: 2%;
             }
-          }
+        }
     }
 
-}
 
 }
